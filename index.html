@@ -1,0 +1,47 @@
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8">
+        <title>owl</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="carousel owl-carousel">
+                <div class="card card-1">A</div>
+                <div class="card card-2">B</div>
+                <div class="card card-3">C</div>
+                <div class="card card-4">D</div>
+                <div class="card card-5">E</div>
+            </div>
+        </div>
+        <script>
+            $(".carousel").owlCarousel({
+                margin: 10,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000, //2000 ms = 2 sec
+                autoplayHoverPause: true,
+                responsive:  {
+                    0:{
+                        items: 1,
+                        nav: false
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000:{
+                        items: 3,
+                        nav: false
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
